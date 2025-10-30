@@ -1,0 +1,12 @@
+# MAUI / .NET build artifacts
+bin/
+obj/
+*.apk
+*.aab
+*.dll
+*.exe
+*.pdb
+*.zip
+.fake
+*.user
+*.csproj.user
