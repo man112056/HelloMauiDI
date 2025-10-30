@@ -5,6 +5,25 @@
 
     <ScrollView>
 
+        <VerticalStackLayout>
+
+        <Label
+            TextColor="Red"
+            Text="Login Status"/>
+
+        <Entry
+            Margin="10,10"
+            Placeholder="Enter UserName"/>
+
+        
+        <Entry
+            Margin="10,10"
+            IsPassword="True"
+            Placeholder="Enter Password"/>
+
+
+        </VerticalStackLayout>
+
     </ScrollView>
 
 </ContentPage>
