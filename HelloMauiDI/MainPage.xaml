@@ -7,26 +7,33 @@
 
         <VerticalStackLayout>
 
-        <Label
-            TextColor="Red"
-            Text="{Binding Status}"/>
+            <Label
+                FontSize="30"
+                HorizontalTextAlignment="Center"
+                 TextColor="Red">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Login Status: "/>
+                        <Span Text="{Binding Status}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
 
-        <Entry
-            Text="{Binding UserName}"
-            Margin="10,10"
-            Placeholder="Enter user"/>
+            <Entry
+                Text="{Binding UserName}"
+                Margin="10,10"
+                Placeholder="Enter user"/>
 
-        
-        <Entry
-            Text ="{Binding Pwd}"
-            Margin="10,10"
-            IsPassword="True"
-            Placeholder="Enter Password"/>
+            <Entry
+                Text="{Binding Pwd}"
+                Margin="10,10"
+                IsPassword="True"
+                Placeholder="Enter Password"/>
 
-        <Button
-            Text ="Login"
-            Command="{Binding LoginCommand}"/>
-
+            <Button
+                Margin="40,20"
+                Text="Login"
+                Command="{Binding LoginCommand}"/>
 
         </VerticalStackLayout>
 
