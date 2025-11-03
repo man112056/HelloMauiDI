@@ -2,8 +2,9 @@
 
 public partial class MainPage : ContentPage
 {
-	public MainPage()
+	public MainPage(LoginViewModel loginViewModel)
 	{
 		InitializeComponent();
+		BindingContext = loginViewModel;
 	}
 }

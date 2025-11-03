@@ -6,10 +6,10 @@
     "configurations": [
         
         {
-            "name": ".NET Meteor Debugger",
-            "type": "dotnet-meteor.debugger",
+            "name": ".NET MAUI",
+            "type": "maui",
             "request": "launch",
-            "preLaunchTask": "dotnet-meteor: Build"
+            "preLaunchTask": "maui: Build"
         }
     ]
 }

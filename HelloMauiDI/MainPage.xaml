@@ -9,17 +9,23 @@
 
         <Label
             TextColor="Red"
-            Text="Login Status"/>
+            Text="{Binding Status}"/>
 
         <Entry
+            Text="{Binding UserName}"
             Margin="10,10"
-            Placeholder="Enter UserName"/>
+            Placeholder="Enter user"/>
 
         
         <Entry
+            Text ="{Binding Pwd}"
             Margin="10,10"
             IsPassword="True"
             Placeholder="Enter Password"/>
+
+        <Button
+            Text ="Login"
+            Command="{Binding LoginCommand}"/>
 
 
         </VerticalStackLayout>
